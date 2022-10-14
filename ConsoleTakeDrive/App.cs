@@ -26,13 +26,13 @@ public class App : IApp
 
         switch (command)
         {
-            case "S":
+            case "-S":
                 CopyS();
                 break;
-            case "O":
+            case "-O":
                 CopyO();
                 break;
-            case "SD" when args.Length == 3 && args[1] == "-d":
+            case "-SD" when args.Length == 3 && args[1] == "-d":
                 CopySPP(args[2]);
                 break;
             default:
